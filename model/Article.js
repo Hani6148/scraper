@@ -14,6 +14,13 @@ ArticleSchema= new Schema({
         type:String,
 
     },
+    saved: {
+        type: Boolean,
+        default:false
+    },
+    image:{
+        type:String
+    },
     link:{type:String,
     required:true},
     note:[
