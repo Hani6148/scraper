@@ -5,7 +5,7 @@ cheerio=require("cheerio")
 
 db=require("./model")
 
-PORT=3002
+var PORT = process.env.PORT || 3002;
 app=express();
 app.use(express.static("public"));
 
