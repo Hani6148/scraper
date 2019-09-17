@@ -12,7 +12,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 mongoUri= process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines"
-mongoose.connect("mongodb://localhost/mongoHeadlines",{ useNewUrlParser: true })
+mongoose.connect(mongoUri,{ useNewUrlParser: true })
 mongoose.set('useFindAndModify', false);
 
 //routes
