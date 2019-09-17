@@ -29,7 +29,7 @@ app.get("/scrape",function(req,res){
             result.link= $(this).children("a").attr("href")
             result.summary=$(this).children("p").text()
             result.image=$(this).children("a").children("img").attr("src")
-            console.log("_________________________________________________________________________________________________",result.image)
+            
             if(result.title){
             db.Article.update({title:result.title},{$set:result},{upsert:true,setDefaultsOnInsert: true}).then(function(dbDoc){
                console.log(dbDoc)

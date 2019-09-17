@@ -8,7 +8,7 @@ $.getJSON("/getsaved", function (data) {
         "<div class='col-sm-4'>" +
         "<div class='card' style='width: 18rem;'>" +
         "<a href='#' class='btn btn-danger unsave-article' data-arid='" + data[i]._id + "'>Unsave</a>"+
-        "<img src='"+data[i].image+"' class='card-img-top' alt='...'>" +
+        // "<img src='"+data[i].image+"' class='card-img-top' alt='...'>" +
         "<div class='card-body'>" +
         "<h5 class='card-title'>" + data[i].title + "</h5>" +
         "<p class='card-text'>" + data[i].summary + "</p>" +
